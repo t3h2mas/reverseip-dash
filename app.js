@@ -27,7 +27,7 @@ function markVisitors(file) {
         if (gdat == null) return;
         if (processed.indexOf(ip) != -1) return;
 
-        log.log(gdat.country);
+        log.log(ip + ' -- ' + gdat.country);
         map.addMarker({"lon": gdat.ll[1], "lat": gdat.ll[0], color: "red", char: "X"});
         processed.push(ip);
       });
