@@ -9,6 +9,6 @@ Analyze who visits your Flask application with this terminal dashboard.
 * the node.js dashboard app
 
 ## todo
-[ ] get rid of cleanlog.sh and add to node app
-[ ] see if an IP has been added yet, if not skip it
-[ ] more bells and whistles
+- [ ] get rid of cleanlog.sh and add to node app
+- [ ] see if an IP has been added yet, if not skip it
+- [ ] more bells and whistles
