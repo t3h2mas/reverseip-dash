@@ -1,6 +1,9 @@
 # reverseip-dash
 Visual geoip lookup dashboard
-powered by node.js and blessed
+**powered by node.js and blessed**
+
+live ip geo lookup and visualization using the file `iplist` by default.
+while running will watch `iplist` for new IP addresses to process.
 
 ![Screenshot](https://github.com/t3h2mas/logboard/blob/master/screenshots/dash.png)
 
