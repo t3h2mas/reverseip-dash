@@ -1,6 +1,6 @@
 {
-  "name": "logboard",
-  "version": "1.0.0",
+  "name": "reverseip-dash",
+  "version": "1.0.2",
   "description": "",
   "main": "app.js",
   "scripts": {
