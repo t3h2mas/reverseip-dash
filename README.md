@@ -3,6 +3,8 @@ Terminal visitor log dashboard using Blessed.
 
 Analyze who visits your Flask application with this terminal dashboard.
 
+![Screenshot](https://github.com/t3h2mas/logboard/blob/master/screenshots/dash.png)
+
 *This repository includes*
 * a Flask app with logging as an example
 * a script to clean the logfile and make an IP list
