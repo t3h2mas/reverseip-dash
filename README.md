@@ -1,7 +1,17 @@
 # reverseip-dash
+Visual geoip lookup dashboard
+powered by node.js and blessed
 
 ![Screenshot](https://github.com/t3h2mas/logboard/blob/master/screenshots/dash.png)
 
+requires blessed, blessed contrib, and geoip-lite
+
+instructions for geoip-lite
+```
+$ npm install geoip-lite
+$ cd node_modules/geoip-lite
+geoip-lite $ npm run-script updatedb
+```
 
 ## example
 * a Flask app with logging as an example
