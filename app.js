@@ -1,3 +1,4 @@
+"use strict";
 var blessed = require('blessed')
   , contrib = require('blessed-contrib')
   , screen = blessed.screen()
@@ -17,12 +18,12 @@ var processed = [];
 
 function markVisitors(file) {
 
-  fs.readFile(file, 'utf8', function (err, data) {
+  fs.readFile(file, 'utf8', (err, data) => {
       if (err) throw err;
 
       var ips = data.split("\n")
-      ips.forEach(function (ip, i, arr) {
-        var gdat = geoip.lookup(ip);
+      ips.forEach((ip, i, arr) => {
+        let gdat = geoip.lookup(ip);
 
         if (gdat == null) return;
         if (processed.indexOf(ip) != -1) return;
@@ -35,12 +36,8 @@ function markVisitors(file) {
   screen.render()
 }
 
-setInterval(function() {
-  markVisitors('iplist')
-}, 1000);
+setInterval(() => markVisitors('iplist'), 1000)
 
-screen.key(['escape', 'q', 'C-c'], function(ch, key) {
-    return process.exit(0);
-});
+screen.key(['escape', 'q', 'C-c'], (ch, key) => { return process.exit(0); })
 
 screen.render()
